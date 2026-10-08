@@ -12,6 +12,7 @@
     </style>
 </head>
 <body>
+    <div id="net-tip" class="alert alert-danger d-none">网络已断开，部分功能不可用</div>
     <header>
     <div class="container">
     <nav class="navbar navbar-expand-md bg-body-tertiary mb-4">
@@ -19,7 +20,7 @@
         <a class="navbar-brand" href="#school">校园公共信息与数据展示中心</a>
         <div class="navbar-nav">
           <a class="nav-link active" href="sub.html">意见反馈</a>
-          <a class="nav-link" href="#3D">三维导航</a>
+          <a class="nav-link" href="campus.html">三维导航</a>
         </div>
       </div>
     </nav>
@@ -67,6 +68,15 @@
 </div>
  <footer class="text-center">
     <p class="mb-1">学校介绍</p></footer>
+<script>
+  var tip = document.getElementById('net-tip');
+  window.addEventListener('offline', function () { 
+    tip.classList.remove('d-none');
+    });
+  window.addEventListener('online', function () { 
+    tip.classList.add('d-none'); 
+    });
+</script>
 </body>
 </html>
 
