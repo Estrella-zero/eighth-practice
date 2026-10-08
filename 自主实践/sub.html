@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>留言星球</title>
+        </head>
+    <body>
+        <a href="index.html" style="display:inline-block;margin:8px 0 0 16px;color:#0d6efd;text-decoration:none;">← 返回首页</a>
+        <header>
+            <h1>留言星球</h1>
+            <p>感谢你宝贵的建议</p>
+        </header>
+    <main>
+        <section id="intro">
+            <h2>填写说明</h2>
+            <p>仅用于网站完善</p>
+        </section>
+        <section id="form">
+            <h2>反馈表单</h2>
+            <p>(表单下一步填在这里)</p>
+        </section>
+        <form id="msg-form" action="#" method="get">
+            <p>
+                <label for="name" >姓名（可填昵称）</label>
+                <input type="type" id="name" name="name" placeholder="怎么称呼你"  required>
+            </p>
+            <p>
+                <label for="mail">邮箱</label>
+                <input type="email" id="mail" name="mail" required>
+            </p>
+            <p>体验评分</p>
+            <p>
+                <label><input type="radio" name="score" value="5" checked>很好</label>
+                <label><input type="radio" name="score" value="4" checked>好</label>
+                <label><input type="radio" name="score" value="3" checked>一般</label>
+            </p>
+            <p>想新增的星球</p>
+            <p>
+                <label><input type="checkbox" name="topic" value="task-chart">任务统计图表</label>
+                <label><input type="checkbox" name="topic" value="course-chart">课程学分图表</label>
+                <label><input type="checkbox" name="topic" value="three-d">三维场景增强</label>
+            </p>
+            <p>
+                <label for="advice">具体建议</label><br>
+                <textarea id="advice" name="advice" rows="4" maxlength="200" placeholder="说点什么"></textarea>
+            </p>
+            <p>
+                <button type="submit">提交反馈</button>
+            </p>
+        </form>
+    </main>
+    <footer>
+        <p>我的生活宇宙 · 留言星球</p>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>任务星球</title>
+  <link href="css/tasks.css" rel="stylesheet">
+</head>
+<body>
+  <a class="back" href="index.html">← 返回首页</a>
+  <h1>任务星球</h1>
+  <form id="add-form">
+    <input type="text" id="task-input" placeholder="要做什么？">
+    <button type="submit">添加</button>
+  </form>
+  <p class="tip" id="tip"></p>
+  <div class="filters">
+    <button data-filter="all">全部</button>
+    <button data-filter="active">未完成</button>
+    <button data-filter="done">已完成</button>
+  </div>
+  <ul id="task-list"></ul>
+  <h2 class="chart-title">完成率统计（ECharts饼图）</h2>
+  <div id="done-chart" class="chart-box"></div>
+
+  <script src="libs/echarts.min.js"></script>
+  <script src="tasks.js"></script>
+</body>
+</html>

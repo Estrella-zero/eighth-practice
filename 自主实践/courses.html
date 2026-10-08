@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>课程星球</title>
+  <link href="css/courses.css" rel="stylesheet">
+</head>
+<body>
+  <a class="back" href="index.html">← 返回首页</a>
+  <h1>课程星球</h1>
+  <form id="add-form">
+    <input type="text" id="course-input" placeholder="请导入课程">
+    <button type="submit">添加</button>
+    <button type="button" id="search">查询</button>
+  </form>
+  <p class="tip" id="tip"></p>
+  <div class="filters">
+    <button data-filter="all">全部</button>
+    <button data-filter="active">未上课</button>
+    <button data-filter="done">已上课</button>
+  </div>
+  <ul id="course-list"></ul>
+
+  <script src="courses.js"></script>
+</body>
+</html>
